@@ -1,0 +1,68 @@
+Requirements process:
+	Doesn't have to be waterfall, can be iterative
+	Appears in several forms, but always appears
+
+Project blastoff:
+	Previous step to requirements discovery
+	Involves all people crucial to the process
+	Defines scope, affirms relevance
+	Context diagram (shows what the program does and what doesn't)
+	Determine stakeholders (those who have requirements for it)
+	Determine goals
+	Estimate costs and risks
+
+Trawling for requirements:
+	Division of context diagram into use cases
+	Uncover the essence of the project
+
+Quick and dirty modeling:
+	UML, BPMN
+	Post-it notes
+
+Scenarios:
+	Divide process into small steps
+	Foundation for requirements
+
+Writing the requirements:
+	Specific, Measurable, Achievable, Relevant, Traceable
+	Avoid ambiguity
+	Non-technical language
+	Add a rationale
+	Fit criterion
+	Helpful tools:
+		Requirements specification template
+		Shell (snow card)
+	This step is integrated with others
+	User stories, precursors of some requirements
+
+Quality gateway:
+	Tests requirements
+	Checks SMART constraints
+
+Reusing requirements:
+	Recycle requirements from previous projects
+
+Reviewing requirements:
+	After all requirements pass the quality gateway
+	Check for:
+		Missing requirements
+		Consistency
+	Reassess costs and risks
+	Determine the risk of each requirement
+
+Iterative vs Waterfall:
+	Waterfall when outsourcing or contracts are involved
+	Otherwise, iterative
+
+Requirements retrospective:
+	"Lessons learned"
+
+Evolution of requirements:
+	???
+
+Formality guide:
+	Rabbit projects
+	Horse projects
+	Elephant projects
+
+What is an innovation workshop?
