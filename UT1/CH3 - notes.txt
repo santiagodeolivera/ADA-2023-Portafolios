@@ -1,0 +1,109 @@
+Project blastoff:
+	a.k.a project kick-off, project initiation, project launch
+	Deliverables:
+		Scope
+		Stakeholders
+		Goals
+		Purpose
+		Constraints
+		Names
+		Relevant facts and assumptions
+		Estimated cost
+		Risks
+
+Setting the scope:
+	Can be done via analyzing data flows between activities
+	Context diagram: Diagram of data flows between activities
+
+
+Stakeholders:
+	Several types
+	Several layers
+	Owners of the product send a sponsor, a representative
+
+	Customer:
+		The product must be valuable to the customer
+		The values of the customer are fundamental
+
+	Users:
+		Hands-on operators of the product
+		Determine groups of users
+			Determine characteristics of those groups
+		Normal operators, operationals support, maintenance operators
+
+	Consultants: people with necessary expertise
+	Management
+	Subject-matter experts
+	Core team: The developers themselves
+	Inspectors
+	Market forces
+	Legal experts
+	Negative stakeholders
+	Industry standard setters
+	Public opinion
+	Government
+	Special-Interest groups
+	Technical experts
+	Cultural interests
+	Adjacent systems
+
+Goals: What do you want to achieve?
+	How to determine?
+		Purpose
+		Advantage
+		Measurement
+		Viability
+		Feasibility
+		Achievability
+
+Constraints:
+	Special requirements
+	Sources:
+		Marketing, cultural, managerial, political, customer expectations, financial
+		Interactions with other systems
+		Use of off-the-shelf or open-source software
+		Budget and time limit
+
+Naming:
+	Recorded in specification template
+	Fundamental to proper communication
+	Preferably done while setting the scope
+
+Cost estimations:
+	Methods:
+		Loose method:
+			Count the number of I/O interactions
+			Watch proportions I/O-cost of previous projects
+			Apply rule of three
+		More accurate method: Involves number of business events
+		Event more accurate method (Function point counting)
+	Methods must be based on measurement
+
+Risk management:
+	Should be done by a risk-assessment person
+	Determine:
+		Potential problems
+		Likelihood of becoming problems
+		Strength of the problems
+		Early signs
+
+Final decision:
+	Involves analyzing final deliverables
+	Objective decision based on facts
+	Other techniques:
+		Strengths, Weaknesses, Opportunities, Threats
+		Advantages, Limitations, Unique qualities, Overcome limitations
+		Specific, Measurable, Attainable, Relevant, Traceable
+		Political, Economic, Sociological, Techonological, Legal, Environmental factors
+		Customers, Actors, Transformation processes, World view, Owners, Environment
+
+Blastoff meetings:
+	It's about knowing:
+		Scope
+		Stakeholders
+		Users
+		Constraints
+		Naming conventions
+	Alternatives (must be seen by all key stakeholders):
+		Write a business plan
+		Use feasibility studies
