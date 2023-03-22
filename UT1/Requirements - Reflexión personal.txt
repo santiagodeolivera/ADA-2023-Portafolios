@@ -1,0 +1,1 @@
+Durante el Reto II, estuvimos dedicando un par de días a definir concretamente el scope del proyecto, que consistía en ayudar a la gente a encontrar un libro en una biblioteca dado su código. Más concretamente, hasta qué punto podíamos extender los requerimientos del proyecto sin que se vuelvan poco realistas.

@@ -5,7 +5,7 @@ CHAOS definition of project success:
 These characteristics were correlated to project success (new definition):
 	Small projects
 	Retail projects
-	North American projects (potential nationalism)
+	North American projects
 	Projects that involve purchasing an application and not modify it
 	Projects which use the Agile process
 	Simple projects

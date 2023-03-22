@@ -28,7 +28,7 @@ Writing the requirements:
 	Avoid ambiguity
 	Non-technical language
 	Add a rationale
-	Fit criterion
+	Add fit criterion
 	Helpful tools:
 		Requirements specification template
 		Shell (snow card)
@@ -64,5 +64,13 @@ Formality guide:
 	Rabbit projects
 	Horse projects
 	Elephant projects
+
+Template:
+	Project drivers
+	Project constraints
+	Functional requirements
+	Non-functional requirements
+	Project issues
+	
 
 What is an innovation workshop?
