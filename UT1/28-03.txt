@@ -1,0 +1,24 @@
+Escenarios (casos de uso)
+Para describir un proceso, donde se identifican:
+ Las partes interesadas
+ Los stakeholders activos
+ El trigger
+ Las precondiciones
+
+
+Secuencia de pasos
+ Sub-escenario
+ Acciones alternativas (A)
+ Excepciones (E)
+ Escenario negativo (M)
+
+Plantilla:
+ BE
+ BUC
+ Disparador
+ Interesados
+ Pasos del caso normal
+ Alternativas
+ Excepciones
+ Escenarios negativos
+ Resultado

@@ -1,0 +1,50 @@
+/*
+Analista de negocio
+	Inspecciona el trabajo, entrevista stakeholders
+	Interlocutor entre cliente/sponsor y equipo
+*/
+
+Apprenticing
+	El analista de negocio observa y participa en el trabajo para aprender de él
+	Requiere bastante tiempo
+	No siempre es aplicable
+
+Workshop
+	Con los BUC, ir con el cliente y definir flujos de procesos
+	Definir escenarios normales, de excepción (what-ifs)
+
+Entrevistas
+	Entrevista con los stakeholders
+
+Reutilización
+	Extraer requerimientos de una base de datos de requerimientos de proyectos previos
+	Inefectiva por sí sola
+
+Dirty Process Modeling
+	Construir modelos rápidos de procesos de negocio
+	Descartados en fases posteriores
+	Prototipos low/high
+		Revisar flujos de trabajo de forma rápida => high
+
+Mind map
+
+Wikis, blogs, discussion forums
+	Como reutilización, pero es una base de datos hecha por los usuarios y stakeholders
+
+Document archaeology
+	"Ir a ver un sistema viejo"
+	Analizar funcionamiento de un sistema viejo
+	Sesgado por características del sistema en el pasado
+
+Family Therapy
+	Cuando hay varios stakeholders
+	Se pueden juntar para que cada stakeholder entienda el punto de vista del otro
+	No suele resultar en acuerdo natural, pero el sponsor tiene la última palabra
+
+Persona analysis
+	Alternativa a family therapy
+	Crear arquetipos de stakeholders
+	Simular cómo usaría el producto
+
+Elección de técnicas
+	

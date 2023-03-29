@@ -55,3 +55,9 @@ Tipos de stakeholders:
 	No poder & Interés (defensores): Mantener informado
 	Poder & No interés (latentes): Mantener satisfechos
 	No poder & No interés (apáticos): Monitorear
+
+----------------------------------------------------------------------
+
+Evento de negocio => Caso de uso de negocio => Caso de uso de producto
+
+Casos de uso del producto
