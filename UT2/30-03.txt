@@ -1,0 +1,20 @@
+Contexto:
+ Centrarse en el problema correcto en vez de la solución tecnológica
+ Enfoque incorrecto => Soluciones a problemas no reales
+
+Pensamiento sistémico
+ Cómo afecta el producto al resto de la organización
+ Interacciones entre el producto y otros componentes
+ Encontrar los puntos en donde el sistema falla y producir un mejor producto final
+
+Cuantificar el valor de un requerimiento:
+ Recompensa, penalización, costo
+
+R & P >= C -> Priorizar
+R | P >= C -> Evaluar
+R & P < C -> Descartar
+
+
+----------------------------------
+
+Persona Analysis

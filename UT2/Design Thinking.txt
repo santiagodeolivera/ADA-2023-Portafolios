@@ -1,0 +1,14 @@
+1. Empathy
+Investigate the client's needs
+
+2. Define
+Formally determine the client's needs
+
+3. Ideate
+Find solutions to the client's needs
+
+4. Prototype
+Create early versions of the solutions
+
+5. Test
+Test the prototypes

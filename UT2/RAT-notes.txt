@@ -1,0 +1,102 @@
+--------------------------------------------
+Product Use Case Scenarios
+--------------------------------------------
+
+A BUC involves the functionality in the business
+A PUC involves the functionality in the product
+
+BUC:
+ BE
+ BUC
+ Trigger
+ Preconditions
+ Interested stakeholders
+ Active stakeholders
+ Steps
+ Outcome
+
+The part of the BUC which can be implemented in the product becomes the PUC
+
+PUC:
+ PUC
+ Trigger
+ Preconditions
+ Interested stakeholders
+ Actor
+ Steps
+
+BUC and PUC are oriented toward stakeholders
+
+Several pros and cons for all solutions to a problem:
+ Cost
+ Constraints
+ Non-functional requirements
+ Organizational/Project goals
+ Functionality
+ Differentiation
+ User experience
+ Innovation
+ Techonogical possibilities
+
+--------------------------------------------
+Avoiding ambiguity
+--------------------------------------------
+
+Group requirements by PUC
+Write them 1 PUC at a time
+
+PUCs define context for the requirement
+
+Read aloud the requirement to find ambiguities
+
+Technological (non-functional) requirements are recorded:
+ Separately
+ After the business (functional) requirements
+
+Requirements can be grouped by:
+ PUC
+ Feature
+
+Hierarchy of requirements:
+ Involve stakeholders of several depths, breadths and focuses of interest
+ Discover atomic requirements
+ Deal with volume and complexity
+Use objective hierarchy
+
+--------------------------------------------
+Alternatives to Functional Requirements
+--------------------------------------------
+
+Enhanced scenarios
+ Usable when the product is very well understood
+ If too long or elaborate, fr are recommended
+ Ambiguous
+
+User stories
+ Written on story cards by the Product Owner
+
+Business Process Models
+ Preferable to several business analysts
+ Sometimes more available to stakeholders
+
+COTS (Commercial off-the-shelf)
+ Premade software
+ Requires post-installation modification
+  Sometimes can be done via parameters
+  Modify functionalities
+ Usually regarded as cheapest option
+ Documentation is almost pointless
+ Discover requirements via mismatches between COTS and BE/BUC/PUC
+ 
+--------------------------------------------
+Types of Non-Functional Requirements
+--------------------------------------------
+
+Look-and-feel: Appearance
+Usability and Humanity: Ease, accessibility
+Performance: Speed, security, availability, accuracy
+Operational: Environment of the product
+Maintainability and Support: Expected changes, time needed for them, necessary support
+Security: Access, confidenciality, recoverability, auditability
+Cultural and Political: culture-related requirements
+Legal: law-related requirements
