@@ -1,0 +1,115 @@
+---- 03-30
+Escritura de requerimientos
+
+Contexto:
+ Centrarse en el problema correcto en vez de la solución tecnológica
+ Enfoque incorrecto => Soluciones a problemas no reales
+
+Pensamiento sistémico
+ Cómo afecta el producto al resto de la organización
+ Interacciones entre el producto y otros componentes
+ Encontrar los puntos en donde el sistema falla y producir un mejor producto final
+
+Cuantificar el valor de un requerimiento:
+ Recompensa, penalización, costo
+
+R & P >= C -> Priorizar
+R | P >= C -> Evaluar
+R & P < C -> Descartar
+
+---- 04-11
+
+RESUMEN:
+PUC -> Definir límite del producto
+Requisitos -> Funcional != Esencial
+
+Diagramas de casos de uso
+
+PUC:
+Determinar partes beneficiadas por la automatización/solución
+Poner LÍMITE al producto
+El límite debe ser:
+	Adaptable a los usuarios
+	Satisfactorio de las necesidades operativoas
+	Contribuya a los objetivos de la organización
+	Precio justo
+
+Iterative development
+	Puede llevar mucho tiempo
+	Consiste en descubrir la solución
+
+Essential Business
+Funcional != esencial
+
+Producto: Lo que elegimos automatizar del BUC
+
+
+-------------------
+
+Tipos de observación de usuarios:
+	Etnografía: estudio de las personas y sus costumbres
+	Observación: ...
+	Prototipos: ...
+
+-------------------
+
+User Experience
+Innovación
+Conveniencia
+	Hacer que el usuario ahorre recursos
+Información
+	Nos interesa lo esencial
+	No introducir efectos secundarios
+Feeling
+	¿Confiable? ¿Seguro? ¿Rápido? ¿Hace lo que debe?
+
+-------------------
+Sistema adyacente
+	Activo: Siempre involucra una acción manual
+	Autónomo: Actúan independientemente, no esperan respuesta
+	Cooperativo: Colaboran en el trabajo, automático
+
+---- 04-13
+Clasificación de reqs.
+ Req. funcionales
+  Asociados a las funcionalidades del producto
+ Req. tecnológicos
+  Asociados a la tecnología en la que se basa el producto
+
+Escritura de requerimientos
+ Resultado del proceso de elicitación
+  Tarjeta de requerimientos
+  Descripción
+   Específico
+   Razón fundamental
+   Criterio de ajuste (Fit criterion)
+   Condicionales
+    Direcciones a caminos no lineales
+    Excepciones
+     Situación no deseada
+    Caminos alternativos
+     Variaciones esperadas
+ Evitar ambiguedad
+  Causas de ambigüedad
+   Homónimos
+   Contexto
+   Generalizaciones
+  Asociar req. a PUC
+
+Tipos de req. no funcionales
+ Rendimiento
+  No exagerar
+ Operacional/ambiental
+  Lo que debe cumplir para **operar** correctamente en su **ambiente**
+ Mantenimiento/soporte
+  Relacionado con el servicio asociado al producto
+ Seguridad
+  Acceso
+  Privacidad: No acceso desautorizado
+  Integridad: No modificación desautorizada
+  Auditoría: registro de acciones
+ Cultura
+ Legal
+
+---- 04-18
+Quality Gateway

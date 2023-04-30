@@ -1,0 +1,214 @@
+---- CHAOS report
+
+CHAOS definition of project success:
+	Old: OnBudget, OnTime and OnTarget
+	New: OnBudget, OnTime and Satisfaction
+
+These characteristics were correlated to project success (new definition):
+	Small projects
+	Retail projects
+	North American projects
+	Projects that involve purchasing an application and not modify it
+	Projects which use the Agile process
+	Simple projects
+	Projects with little involment from stakeholders
+	Projects with skilled staff
+
+---- El proceso
+
+Blastoff
+	Es una fase del proyecto
+	No es una reunión
+	Son varias reuniones con tareas previas y varios entregables
+	Entregables:
+		Propósito: ¿Para qué se hace el proyecto?
+		Alcance del trabajo: Las áreas de negocio
+		Stakeholders
+		Constraints
+		Glosario
+		Hechos relevantes y suposiciones
+		Costo estimado
+		Riesgos
+		Decisión final de arrancar
+		
+
+Interesados importantes:
+	Gerente de proyecto asignado
+	Nombre y nivel de autoridad del patrocinador
+
+Conseguir requerimientos:
+	BUC:
+		Vender un pasaje
+		Reservar un pasaje
+		Pagar una deuda
+	Para cada BUC hay un evento de negocio (BE)
+	Lo más difícil es buscar y definir la necesidad
+	Modelado rápido y escenarios
+Escribir reqs
+Probar reqs:
+	Líder de requisitos y líder de testing/QA
+	Chequear validez
+Reutilizar reqs
+Evolución de reqs:
+	Solicitudes de cambio:
+		Corrección
+		Adaptación
+		Mejora
+		Prevención
+
+Escenario: grupo de pasos
+
+Retrospectiva:
+	¿Qué hicimos bien?
+	¿Qué hicimos mal?
+	¿Qué haríamos diferente?
+
+Alcance
+	Definir el área afectada por el proyecto y sus límites
+
+Tipos de stakeholders:
+	Poder & Interés (promotores): Administrar de cerca
+	No poder & Interés (defensores): Mantener informado
+	Poder & No interés (latentes): Mantener satisfechos
+	No poder & No interés (apáticos): Monitorear
+
+Evento de negocio => Caso de uso de negocio => Caso de uso de producto
+
+Casos de uso del producto
+
+---- Requirement Truths
+
+1. Requirements are not really about requirements
+
+2. If we must build software, then it must be optimally valuable for its
+owner
+
+3. If your software does not have to satisfy a need, then you can build
+anything. However, if it is meant to satisfy a need, then you have to
+know what that need is to build the right software
+
+4. There is an important difference between building a piece of software
+and solving a business problem. The former does not necessarily
+accomplish the latter
+
+5. The requirements do not have to be written, but they have to become
+known to the builders
+
+6. Your customer won’t always give you the right answer. Sometimes it is
+impossible for the customer to know what is right, and sometimes he just
+doesn’t know what he needs
+
+7. Requirements do not come about by chance. There needs to be some
+kind of orderly process for developing them
+
+8. You can be as iterative as you want, but you still need to understand
+what the business needs
+
+9. There is no silver bullet. All our methods and tools will not compensate
+for poor thought and poor workmanship
+
+10. Requirements, if they are to be implemented successfully, must be
+measurable and testable
+
+11. You, the business analyst, will change the way the user thinks about his
+problem, either now or later
+
+Requirements are:
+	Discovered
+	Valuable
+	Indispensable
+	Hard to discover
+	Measurable
+
+
+Modelo cascada:
+	Comunicación
+	Planeación
+	Modelado
+	Construcción
+	Despliegue
+
+
+Requisito:
+	Condición o capacidad que un usuario necesita para poder resolver un problema o lograr un objetivo (IEEE)
+	Condición o capacidad que debe ser corroborada por el sistema
+	Algo que el sistema debe hacer o una cualidad que debe poseer
+
+SMART
+Specific: Bien definido
+Measurable: Se puede medir
+Achievable: Realista
+Relevant: Relevante
+Traceable: Con límite de tiempo
+
+---- Técnicas de relevamiento
+Técnicas para aprender del negocio y desarrollar 
+
+Apprenticing
+	El analista de negocio observa y participa en el trabajo para aprender de él
+	Requiere bastante tiempo
+	No siempre es aplicable
+
+Workshop
+	Con los BUC, ir con el cliente y definir flujos de procesos
+	Definir escenarios normales, de excepción (what-ifs)
+
+Entrevistas
+	Entrevista con los stakeholders
+
+Reutilización
+	Extraer requerimientos de una base de datos de requerimientos de proyectos previos
+	Inefectiva por sí sola
+
+Dirty Process Modeling
+	Construir modelos rápidos de procesos de negocio
+	Descartados en fases posteriores
+	Prototipos low/high
+		Revisar flujos de trabajo de forma rápida => high
+
+Mind map
+
+Wikis, blogs, discussion forums
+	Como reutilización, pero es una base de datos hecha por los usuarios y stakeholders
+
+Document archaeology
+	"Ir a ver un sistema viejo"
+	Analizar funcionamiento de un sistema viejo
+	Sesgado por características del sistema en el pasado
+
+Family Therapy
+	Cuando hay varios stakeholders
+	Se pueden juntar para que cada stakeholder entienda el punto de vista del otro
+	No suele resultar en acuerdo natural, pero el sponsor tiene la última palabra
+
+Persona analysis
+	Alternativa a family therapy
+	Crear arquetipos de stakeholders
+	Simular cómo usaría el producto
+
+---- Escenarios
+
+Escenarios (casos de uso)
+Para describir un proceso, donde se identifican:
+ Las partes interesadas
+ Los stakeholders activos
+ El trigger
+ Las precondiciones
+
+
+Secuencia de pasos
+ Sub-escenario
+ Acciones alternativas (A)
+ Excepciones (E)
+ Escenario negativo (M)
+
+Plantilla:
+ BE
+ BUC
+ Disparador
+ Interesados
+ Pasos del caso normal
+ Alternativas
+ Excepciones
+ Escenarios negativos
+ Resultado

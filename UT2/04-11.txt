@@ -1,0 +1,51 @@
+RESUMEN:
+PUC -> Definir límite del producto
+Requisitos -> Funcional != Esencial
+
+Especificar el BUC de pagar N veces
+
+Diagramas de casos de uso
+
+PUC:
+Determinar partes beneficiadas por la automatización/solución
+Poner LÍMITE al producto
+El límite debe ser:
+	Adaptable a los usuarios
+	Satisfactorio de las necesidades operativoas
+	Contribuya a los objetivos de la organización
+	Precio justo
+
+Iterative development
+	Puede llevar mucho tiempo
+	Consiste en descubrir la solución
+
+Essential Business
+Funcional != esencial
+
+Producto: Lo que elegimos automatizar del BUC
+
+
+-------------------
+
+Tipos de observación de usuarios:
+	Etnografía: estudio de las personas y sus costumbres
+	Observación: ...
+	Prototipos: ...
+
+-------------------
+
+User Experience
+Innovación
+Conveniencia
+	Hacer que el usuario ahorre recursos
+Información
+	Nos interesa lo esencial
+	No introducir efectos secundarios
+Feeling
+	¿Confiable? ¿Seguro? ¿Rápido? ¿Hace lo que debe?
+
+-------------------
+Sistema adyacente
+	Activo: Siempre involucra una acción manual
+	Autónomo: Actúan independientemente, no esperan respuesta
+	Cooperativo: Colaboran en el trabajo, automático

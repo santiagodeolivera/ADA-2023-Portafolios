@@ -1,0 +1,81 @@
+FC: Fit criteria
+
+12.
+
+Req. description -> Rationale -> Fit criterion -> Test case
+
+Fit criteria and rationale
+Fit criteria: Determines how to determine whether the requirement is satisfied
+Rationale: Reason for the requirement to exist
+
+For NFR yielded by a blog, determine its fit criterion
+Write the "test case"
+ Requirements don't have test cases, they have fit criterion
+
+Defining a measurement for a requirement can be hard
+
+Rationale:
+ Facilitates finding of fit criteria
+ Facilitates decision-making
+ Improves test-making
+
+Derive fit criteria from description and rationale.
+
+Scale of measurement
+ The numbers must come from informed decisions
+
+Fit criteria for NFR
+
+Subjective tests:
+ Req. testing method
+ Involves prototypes
+ Cost-effective
+
+Types of NFRs
+ Standards
+ Look and Feel Requirements
+ Usability and Humanity
+ Performance
+ Operational
+ Maintainability
+ Security
+ Cultural
+ Legal
+
+Look and Feel Requirements
+ Subset of UX?
+
+Usability and Humanity
+ Subset of UX?
+
+Operational
+ Related to environment
+ Related to adjacent systems
+
+FRs
+ Involve an action the product must complete
+ Depends on satisfying an autority of such
+ Fit criterion does not indicate **how** the req. is tested
+ If req is "the product shall check...", FC is "The checked data conforms with [authority]"
+ If req is "the product shall calculate...", FC is "The result conforms to [algorithm]"
+
+Test case
+ Convienent to make at early stages
+ Testers can collaborate in making them
+
+Forms of FC
+ Text
+ Graphic
+
+Text FC: Requires objective definition of all terms
+
+Graphic FC:
+ Decision table
+ Graph
+
+Use cases and FC
+ Use cases are groups of requirements
+ Outcome is its FC
+ Should be found early on, during blastoff
+
+Project purpose is FC of whole project

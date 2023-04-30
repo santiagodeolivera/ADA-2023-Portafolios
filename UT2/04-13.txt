@@ -1,0 +1,40 @@
+Clasificación de reqs.
+ Req. funcionales
+  Asociados a las funcionalidades del producto
+ Req. tecnológicos
+  Asociados a la tecnología en la que se basa el producto
+
+Escritura de requerimientos
+ Resultado del proceso de elicitación
+  Tarjeta de requerimientos
+  Descripción
+   Específico
+   Razón fundamental
+   Criterio de ajuste (Fit criterion)
+   Condicionales
+    Direcciones a caminos no lineales
+    Excepciones
+     Situación no deseada
+    Caminos alternativos
+     Variaciones esperadas
+ Evitar ambiguedad
+  Causas de ambigüedad
+   Homónimos
+   Contexto
+   Generalizaciones
+  Asociar req. a PUC
+
+Tipos de req. no funcionales
+ Rendimiento
+  No exagerar
+ Operacional/ambiental
+  Lo que debe cumplir para **operar** correctamente en su **ambiente**
+ Mantenimiento/soporte
+  Relacionado con el servicio asociado al producto
+ Seguridad
+  Acceso
+  Privacidad: No acceso desautorizado
+  Integridad: No modificación desautorizada
+  Auditoría: registro de acciones
+ Cultura
+ Legal
