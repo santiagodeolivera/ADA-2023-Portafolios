@@ -1,0 +1,114 @@
+:0
+0#ROOT
+Ways of using the UML
+
+:1
+0#Ways of using the UML
+Sketch
+Blueprint
+Programming language
+Completeness
+
+:2
+1#Sketch
+Communicate some aspects of a system
+The essence is selectivity
+Supposedly the most common
+Informal and dynamic
+
+:3
+1#Programming language
+UML as programming language
+Perspectives
+MDA
+Executable UML
+
+:4
+3#Perspectives
+Behavioral modeling
+Conceptual modeling
+Software modeling
+
+:5
+4#Behavioral modeling
+Interaction diagrams
+State diagrams
+Activity diagrams
+
+:6
+4#Conceptual modeling
+Description of the concepts of a domain of study
+Building a vocabulary about a domain
+
+:7
+4#Software modeling
+Elements of UML map into software
+
+:8
+3#MDA
+Standard approach to using UML to program
+Uses UML as basic modeling language
+Work division
+
+:9
+8#Work division
+PIM
+PSM
+
+:10
+9#PIM
+Platform Independent Model
+
+:11
+9#PSM
+Platform Specific Model
+
+:12
+3#Executable UML
+Directly from PIM-like diagram to deployable system
+Simpler than full UML
+Compilers
+
+:13
+12#Compilers
+Based on archetypes
+
+:14
+1#Completeness
+Communicate all design decisions of a system or subsystem
+The essence is completeness
+CASE tools
+
+:15
+14#CASE tools
+Compute-aided software engineering
+Examples
+
+:16
+15#Examples
+Forward-engineering tools
+Reverse-engineering tools
+round-trip tools
+tripless tools
+
+:17
+16#Forward-engineering tools
+Support diagram drawing
+Back it up with a repository
+
+:18
+16#Reverse-engineering tools
+Read source code
+Generate diagrams from it
+
+:19
+16#round-trip tools
+Do forward-engineering
+Do reverse-engineering
+
+:20
+16#tripless tools
+Use source code as repository
+Use diagrams as graphic viewport on the cdode
+Can be integrated with programming editors
+

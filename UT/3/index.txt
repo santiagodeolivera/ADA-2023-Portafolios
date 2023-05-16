@@ -1,0 +1,190 @@
+:0
+0#ROOT
+Diseño
+Definiciones
+Journey map
+Diagramas UML
+
+:1
+0#Diseño
+Proceso de diseño de software
+Principios del diseño
+
+:2
+1#Proceso de diseño de software
+Diseño arquitectónico
+Especificación abstracta
+Diseño de la interfaz
+Diseño de los componentes
+
+:3
+1#Principios del diseño
+Dividir y conquistar
+Incrementar la cohesión
+Reducir el acoplamiento
+Maximizar el nivel de abstracción
+Incrementar la reusabilidad
+Maximizar la flexibilidad
+Anticipar la obsolecencia
+
+:4
+0#Definiciones
+Sistema
+Subsistema
+Componente
+Módulo o namespace
+Módulo
+
+:5
+4#Sistema
+Compuesto por hardware y software
+
+:6
+4#Subsistema
+
+:7
+4#Componente
+Reutilizable
+
+:8
+4#Módulo
+Package / Namespace
+
+:9
+0#Journey map
+Descubrimiento
+Consideración
+Compra
+Retención
+Recomendación
+
+:10
+0#Diagramas UML
+Diagramas de estructura
+Diagramas de comportamiento
+
+:11
+10#Diagramas de estructura
+Diagramas de clase
+
+:12
+11#Diagramas de clase
+Descripción
+Conceptos
+
+:13
+12#Descripción
+Describe los tipos de objetos
+Describe relaciones estáticas
+Describe las propiedades y métodos
+
+:14
+12#Conceptos
+Generalización
+Asociación
+Agregación
+Composición
+Dependencia
+Atributos
+Notas y comentarios
+Enumeradores
+Propiedades derivadas
+
+:15
+14#Generalización
+Define clases derivadas (relación de herencia)
+
+:16
+14#Asociación
+Una línea simple
+Una instancia de una clase tiene como propiedad una instancia de otra
+Clases de asociación
+
+:17
+16#Clases de asociación
+Almacena métodos o propiedades no manejados por ninguna de las dos entidades
+
+:18
+14#Agregación
+Línea con rombito blanco
+Muy parecida a la asociación
+Diferencia sutil
+
+:19
+14#Composición
+Línea con rombito negro
+Parecida a la asociación
+Dependencia mucho más fuerte
+Cuando el padre muere, las instancias compuestas también
+
+:20
+14#Dependencia
+Una clase depende de otra
+La segunda no está dentro de la primera
+
+:21
+14#Atributos
+Visibilidad
+Nombre
+Tipo
+Multiplicidad
+Valor predeterminado
+Readonly
+Otros
+
+:22
+21#Visibilidad
+Default
+Private
+Public
+Restricted
+
+:23
+14#Notas y comentarios
+Solas o vinculadas con línea punteada
+
+:24
+14#Enumeradores
+
+:25
+14#Propiedades derivadas
+Atributos cuyo valor depende de otros atributos
+Un "/" después del nombre
+
+:26
+10#Diagramas de comportamiento
+Diagramas de casos de uso
+Diagramas de secuencia
+Diagramas de actividad
+
+:27
+26#Diagramas de casos de uso
+Representan relaciones entre casos de uso
+Relaciones
+
+:28
+27#Relaciones
+Extend
+Includes
+
+:29
+26#Diagramas de secuencia
+Muestra la interacción entre distintos participantes
+Captura el comportamiento de un solo escenario
+Muy lineal
+
+:30
+26#Diagramas de actividad
+Diagrama de alto nivel
+Modelan el flujo de trabajo de un proceso de negocio
+Modelan actividades
+Bifurcación
+Unión
+
+:31
+30#Bifurcación
+Representa separación de un flujo en flujos paralelos
+
+:32
+30#Unión
+Unión de varios flujos paralelos
