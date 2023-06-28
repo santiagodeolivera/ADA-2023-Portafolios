@@ -1,0 +1,169 @@
+Tipos de usuarios:
+	Atleta
+	Gimnasio
+	Fotógrafo
+	Juez
+	Administrador
+
+Entidades:
+	Usuario
+	Servicio de emergencias
+		// ¿Cómo se determina qué servicio de emergencia atenderá durante una emergencia?
+	Contrato con servicio de emergencias
+		Servicios de emergencias asociados (1, 1..N)
+	Proveedor
+		Servicios adicionales (1, 1..N)
+		proyectos para la venta (1, 1..N)
+	Fotógrafo
+		// ¿Cómo funciona el tema de cobrar por una foto?
+		// ¿Solo saca fotos de un WOD?
+	Gimnasio
+		Ubicación
+	Equipamiento:
+		cuerdas, cuerdas de saltar, cajones, barras, kettlebells, dumbbells, jaulas, anillas, áreas de correr, paredes, pesos, remos, máquinas de sky, bicicletas, medballs
+	Juez
+		// ¿Cómo funciona el tema de que un juez juzga un video?
+	Administrador
+	Competencia
+		Presencial, online o híbrida
+		Periodo crítico (pre-insc a valid inc)
+		:Presencial
+			Gimnasios (0..N, 1..N)
+			Proveedores (0..N, 0..N, fee)
+		Etapas:
+			Lanzamiento
+			Pre-inscripción
+			Abierta
+			Cerrada
+			En ejecución
+				Clasificatoria: Secuencia de WODs
+				Cuartos de final: WOD
+				Semifinales: WOD
+				Final: WOD
+				// ¿Es así cómo funcionan las competencias?
+			Validación
+			Cerrada
+		Categorías
+		Dividida por clasificaciones de edad
+		Dividida por categoría
+		Dividida por género
+	WOD:
+		Presencial u online
+		Fecha y horario
+		:Online
+			Fecha y horario de subida
+		Equipamiento específico
+		Parámetros definidos:
+			Disposición de los materiales
+			Distancia entre los materiales
+	Video de WOD:
+		Atleta (0..N, 1)
+		WOD online (0..N, 1)
+		Fecha de subida
+		// El atleta debe participar en el WOD
+		// La fecha de subida debe ser del rango de horario de subida del WOD
+	Heat
+		// ¿Qué es eso?
+	Puntuación:
+		Atleta (0..N, 1)
+		WOD (0..N, 1)
+		Cantidad
+
+Para todo WOD, todo atleta sube un video a una plataforma pública con su puntuación. Los jueces evalúan el atleta mediante estos videos.
+
+Escenarios:
+	Atleta se registra:
+		Precs: Atleta no se ha registrado
+		Atleta va a signup
+		Atleta elige registrarse como atleta
+		Atleta ingresa información:
+			C.I., nombres, apellidos, fecha_nac,
+			foto de certificado de salud
+			o consentimiento de deslinde (documento firmado)
+		proyecto confirma mediante DNIC y HCEN
+	"Alguien" inserta competencia:
+		...
+	Proveedor se asocia a competencia:
+		...
+	Juez (o jueces, ?) juzga video de WOD:
+		...
+	Fotógrafo sube foto:
+	Atleta se inscribe a competencia:
+		Precs: Atleta está registrado en la app
+		Atleta inicia sesión
+		Atleta inicia procedimiento
+		Atleta selecciona su categoría
+	Atleta realiza WOD presencial:
+		Precs: Es la hora
+		Atleta va a lugar
+		Lugar prepara cámara
+		Atleta realiza WOD
+		...
+	Atleta realiza WOD en línea
+		Precs: Es la hora
+		Atleta prepara cámara
+		Atleta realiza WOD
+		Atleta sube video
+	Realización de pagos:
+		...
+	Rol de fotógrafo en un WOD:
+		Fotógrafo asiste WOD
+		Fotógrafo saca fotos
+		Fotógrafo va a la sección del WOD
+		Fotógrafo inserta imagen y precio
+		proyecto almacena información
+
+* Si un atleta sube el video de un WOD demasiado tarde, cuenta como que no lo hizo
+
+Datos personales de un atleta: CI, nombres, apellidos, fecha nacimiento, foto de salud
+
+Foto de salud de un atleta: foto de su certificado de salud o foto de su consentimiento de deslinde
+
+Estado de un atleta en una competencia: puntuación del atleta en todos los WOD de la competencia hasta ahora
+
+#1 Atleta se registra:
+El proyecto debe tener un registro de los atletas que van a participar en las competencias.
+Rationale: Para mantener un registro de sus puntuaciones, entregar premios y confirmar su foto de salud. También para que personas externas al proyecto puedan reconocerlos.
+
+#1.1 Rol de fotógrafo de un WOD:
+El proyecto debe determinar, para cualquier foto de un WOD, quién la sacó.
+Rationale: Para pagar lo debido a los fotógrafos, e identificar fotógrafos que suban imágenes no relacionadas con el WOD.
+
+#1.2 Rol de fotógrafo de un WOD:
+Se debe asegurar que 
+
+#2 Atleta se registra:
+El proyecto debe permitir a un atleta que no se haya registrado antes hacerlo
+Rationale: Para que los atletas puedan inscribirse a las competencias
+
+#3 Atleta se registra:
+El proyecto debe almacenar el CI de todos los atletas
+Rationale: Para que agentes externos al proyecto puedan reconocerlos de manera inequívoca
+
+#4 Atleta se registra:
+El proyecto debe almacenar los nombres y apellidos de todos los atletas
+Rationale: Para que personas externas al proyecto puedan reconocerlos fácilmente
+
+#5 Atleta se registra:
+El proyecto debe poder determinar, a tiempo real, la edad de todos los atletas
+Rationale: Para determinar a qué categoría por edad se incluye en una competencia
+
+#6 Atleta se registra:
+Para todo atleta, el proyecto debe almacenar, o bien una foto de su certificado de salud, o bien una foto de su consentimiento de deslinde
+Rationale: ...
+
+#7 Atleta se registra:
+Antes de registrar un atleta, el proyecto debe cotejar sus datos personales con el DNIC y el HCEN.
+Rationale: Porque se solicita que los dichos datos sean cotejados con el DNIC y el HCEN.
+
+#8 Rol de fotógrafo en un WOD:
+El proyecto debe permitir a usuarios con el rol de fotógrafos subir imágenes asociadas a un WOD en concreto.
+Rationale: Porque se solicita que los fotógrafos puedan subir fotos de los eventos.
+
+#9 Atleta realiza WOD en línea:
+El proyecto debe permitir a los atletas subir el video de un WOD durante su horario de subida.
+Rationale: Para que los atletas puedan participar de los WODs online.
+
+#10 Realización de pagos:
+El proyecto debe realizar automáticamente las transacciones ordenadas por los jueces y administradores.
+Rationale: Porque se solicita.

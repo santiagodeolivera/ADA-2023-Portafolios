@@ -32,7 +32,6 @@ Anticipar la obsolecencia
 Sistema
 Subsistema
 Componente
-Módulo o namespace
 Módulo
 
 :5
@@ -66,6 +65,7 @@ Diagramas de comportamiento
 :11
 10#Diagramas de estructura
 Diagramas de clase
+Diagramas de despliegue
 
 :12
 11#Diagramas de clase
@@ -106,13 +106,13 @@ Almacena métodos o propiedades no manejados por ninguna de las dos entidades
 
 :18
 14#Agregación
-Línea con rombito blanco
+Línea con rombito blanco en la clase mayor
 Muy parecida a la asociación
 Diferencia sutil
 
 :19
 14#Composición
-Línea con rombito negro
+Línea con rombito negro en la clase mayor
 Parecida a la asociación
 Dependencia mucho más fuerte
 Cuando el padre muere, las instancias compuestas también
@@ -152,39 +152,85 @@ Atributos cuyo valor depende de otros atributos
 Un "/" después del nombre
 
 :26
+11#Diagramas de despliegue
+Muestran la disposición física de un sistema
+Revela qué software ejecuta en qué hardware
+Nodos
+
+:27
+26#Nodos
+Un nodo es algo (físico o lógico) que alberga software
+
+:28
 10#Diagramas de comportamiento
 Diagramas de casos de uso
 Diagramas de secuencia
 Diagramas de actividad
 
-:27
-26#Diagramas de casos de uso
+:29
+28#Diagramas de casos de uso
 Representan relaciones entre casos de uso
 Relaciones
 
-:28
-27#Relaciones
-Extend
+:30
+29#Relaciones
+Extends
 Includes
+Generalización entre actores
 
-:29
-26#Diagramas de secuencia
+:31
+30#Extends
+Un caso puede ser incluido en otro como uno de sus pasos
+Flecha del paso al principal
+
+:32
+30#Includes
+Un caso siempre incluye a otro como uno de sus pasos
+Flecha del principal al paso
+
+:32.5
+30#Generalización entre actores
+Un actor hereda el comportamiento de otro
+Flecha hueca
+
+:33
+28#Diagramas de secuencia
 Muestra la interacción entre distintos participantes
 Captura el comportamiento de un solo escenario
 Muy lineal
 
-:30
-26#Diagramas de actividad
+:34
+28#Diagramas de actividad
 Diagrama de alto nivel
 Modelan el flujo de trabajo de un proceso de negocio
 Modelan actividades
 Bifurcación
 Unión
+Señales
 
-:31
-30#Bifurcación
+:35
+34#Bifurcación
 Representa separación de un flujo en flujos paralelos
 
-:32
-30#Unión
+:36
+34#Unión
 Unión de varios flujos paralelos
+
+:37
+34#Señales
+Tiempo
+Recepción
+Envío
+
+:38
+37#Tiempo
+Reloj de arena
+
+:39
+37#Recepción
+Recibir un evento de un proceso externo
+
+:40
+37#Envío
+Enviar un evento a un proceso externo
+

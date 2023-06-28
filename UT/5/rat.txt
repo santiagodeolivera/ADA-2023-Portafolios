@@ -1,0 +1,419 @@
+Symptoms of rotting design:
+1,Rigidity: Difficulty of change
+2,Fragility: Tendency to break on changing
+3,Inmobility: Inability of reuse
+4,Viscosity: Preferability of hacks over design-preserving methods
+
+SOLID:
+5,SRP (Single Responsibility principle): Classes mustn't have more than one responsibility
+6,OCP (Open-Closed principle): Classes must be open to extension, but closed to modification
+7,LSP (Liskov Substitution principle): Subclasses must be able to replace a base class
+8,ISP (Interface Segregation principle): Many small interfaces are better than a big one
+9,DIP (Dependency Inversion principle): Depend on abstractions
+
+8,ISP - alias:
+Clients shouldn't be forced to depend on interfaces they don't use
+
+9,DIP - alias:
+High-level modules must not depend on low-level ones, both must depend on abstractions
+Details should depend on abstractions
+
+Principles of Package Architecture:
+10,REP (Release Reuse Equivalence principle): The granule of release is also the granule of reuse
+11,CCP (Common Close principle): Classes that change together, belong together
+12,CRP (Common Reuse principle): Classes that aren't reused together shouldn't be grouped together
+
+Package Coupling principles:
+13,ADP (Acylic Dependencies principle): Dependencies between packages mustn't form cycles
+14,SDP (Stable Dependencies principle): Depend in the direction of stability
+15,SAP (Stable Abstractions principle): Stable packages must be abstract
+
+14,SDP & 15,SAP data:
+C_a (Afferent coefficient): number of external classes that depend on internal ones
+C_e (Efferent coefficient): number of external classes that internal ones depend on
+I (instability) = C_e / (C_a + C_e)
+A (Abstractness): Proportion of number of abstract classes over all classes
+D' (Normalized distance) = abs(I + A - 1)
+D (Distance) = D' / sqrt(2)
+
+Peeling the Onion:
+16,What is the problem?
+17,What are other people doing to contribute to this problem?
+18,What are you doing to contribute to this problem?
+
+18.5,Antipatterns:
+A bad solution and a good solution
+Patterns are good or bad depending on context and problem
+
+Writing new antipatterns:
+19,Design patterns start with a common solution
+20,Antipatterns start with a common problem
+21,Study groups
+
+18.5,Antipatterns - Properties:
+Name
+AKA
+Most frequent scale
+Refactored solution type
+Root causes
+Unbalanced forces
+Anecdotal evidence
+Background
+General form
+Symptoms and consequences
+Typical causes
+Known exceptions
+Refactored solutions
+Variations
+Example
+Related solutions
+
+18.5,Antipatterns - Types:
+Blob: A class holds too many responsibilities
+Lava Flow: Unused code which is kept to avoid short-term problems
+Golden Hammer: Forcing the same solution on different problems
+Spaghetti Code: Structure-less code
+Cut-and-Paste Programming: Software over-reuse via copy-paste
+Mushroom management: No direct communication between end-users and developers
+
+Design patterns:
+Creational patterns
+Structural patterns
+Behavioral patterns
+
+Creational patterns:
+Abstract Factory
+Builder
+Factory Method
+Prototype
+Singleton
+
+Abstract Factory: Interface for creating families of classes which go together
+abstract class AbstractFactory {
+	abstract CreateProduct1(): Product1;
+	abstract CreateProduct2(): Product2;
+}
+
+Builder: Separate the construction of a complex object from its representation
+abstract class Builder {
+	abstract BuildPart();
+}
+abstract class Director {
+	builder: Builder
+	Construct();
+}
+
+Factory Method: Define an interface for creating an object, but let subclasses decide which class to instantiate
+abstract class Creator {
+	abstract FactoryMethod(): Product;
+	AnOperation() {
+		product = FactoryMethod();
+		/* More code */
+	}
+}
+
+Prototype: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype
+class Client {
+	prototype: Prototype;
+	Operation();
+}
+abstract class Prototype {
+	Clone(): Prototype;
+}
+
+Singleton: Only one instance of a class can exist
+
+Structural patterns:
+Adapter
+Bridge
+Composite
+Decorator
+Facade
+Flyweight
+Proxy
+
+Adapter: Implements one abstraction, depends on another, acts as a translator between interfaces
+abstract class Target {
+	abstract Request();
+}
+class Adapter extends Target {
+	adaptee: Adaptee;
+	Request();
+}
+class Adaptee {
+	SpecificRequest();
+}
+
+Bridge: Decouple an abstraction from its implementation so that the two can vary independently
+abstract class Abstraction {
+	imp: Implementor;
+	Operation();
+}
+class RefinedAbstraction extends Abstraction {}
+abstract class Implementor {
+	abstract OperationImp();
+}
+class ConcreteImplementor extends Implementor {
+	OperationImp();
+}
+
+Composite: Compose objects into tree structures to represent part-whole hierarchies
+abstract class Element {
+	abstract Operation();
+}
+class Leaf extends Element {
+	Operation();
+}
+class Composite extends Element {
+	children: Element[]
+	Operation() { children.forEach(Element::Operation) }
+}
+
+Decorator: Attach additional responsibilities to an object dynamically
+abstract class Component {
+	abstract Operation();
+}
+class ConcreteComp extends Component {
+	Operation();
+}
+abstract class Decorator extends Component {
+	component: Component;
+	Operation() { component.Operation(); /*more behavior*/ }
+	/*More attrs*/
+}
+
+Facade: Provides a high-level interface (or interfaces) to mask the inner complexity of a system
+
+Flyweight: Sharing several object references for efficient memory management
+class FlyweightFactory {
+	flyweights: Flyweight[];
+	GetFlyweight(key): Flyweight {
+		if not existing, create and add to list.
+		return flyweight.
+	}
+}
+abstract class Flyweight {
+	abstract Operation(extrinsicState);
+}
+class ConcreteFlyWeight {
+	Operation(extrinsicState);
+	intrinsicState;
+}
+class UnsharedConcreteFlyWeight {
+	Operation(extrinsicState);
+	allState;
+}
+
+
+Proxy: Provide a surrogate or placeholder for another object to control access to it
+Example: Lazy loading of objects
+abstract class Subject {
+	abstract Request();
+}
+class RealSubject extends Subject {
+	Request();
+}
+class Proxy extends Subject {
+	Request() {
+		get real subject.
+		realSubject.Request();
+	}
+}
+
+Behavioral patterns:
+Chain of responsibility
+Command
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template Method
+Visitor
+
+Chain of responsibility: Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request
+interface Handler {
+	abstract HandleRequest();
+}
+interface ChainHandler extends Handler {
+	abstract getSuccessor(): Handler;
+	HandleRequest() {
+		/* Do its own thing */
+		getSuccessor().HandleRequest();
+	}
+}
+class ConcreteHandler extends Handler {
+	HandleRequest();
+}
+
+Command: Encapsulate a request as an object
+abstract class Command {
+	abstract Execute();
+}
+class Command1 extends Command {
+	Execute() { receiver.Action(); }
+	receiver: Receiver1;
+	state;
+}
+class Receiver1 {
+	Action();
+}
+
+
+Interpreter: Given a language, define a represention for its grammar along with an interpreter that uses the representation to interpret sentences in the language
+abstract class AbstractExpression {
+	abstract Interpret(Context);
+}
+abstract class TerminalExpression {
+	Interpret(Context);
+}
+abstract class NonTerminalExpression {
+	Interpret(Context);
+	expressions: AbstractExpression[];
+}
+
+
+Iterator: Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation
+abstract class Aggregate {
+	abstract CreateIterator(): Iterator;
+}
+abstract class Iterator {
+	abstract First();
+	abstract Next();
+	abstract IsDone();
+	abstract CurrentItem();
+}
+class ConcreteAggregate extends Aggregate {
+	CreateIterator(): Iterator { return new ConcreteIterator(this); }
+}
+class ConcreteIterator extends Iterator {
+	First();
+	Next();
+	IsDone();
+	CurrentItem();
+	aggregate: ConcreteAggregate;
+}
+
+Mediator: Define an object that encapsulates how a set of objects interact
+abstract class Colleague {
+	mediator: Mediator;
+}
+class ConcreteColleague1 extends Colleague {}
+class ConcreteColleague2 extends Colleague {}
+abstract class Mediator {}
+class ConcreteMediator extends Mediator {
+	c1: ConcreteColleague1;
+	c2: ConcreteColleague2;
+}
+
+Memento: Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later
+class Memento {
+	GetState();
+	SetState();
+	private state;
+}
+class Originator {
+	private state;
+	SetMemento(Memento m) { state = m.GetState(); }
+	CreateMemento { return new Memento(state); }
+}
+
+
+Observer: Event communication
+abstract class Subject {
+	Attach(Observer);
+	Detach(Observer);
+	Notify() { observers.forEach(Observer::Update) }
+	observers: Observer[];
+}
+abstract class Observer {
+	abstract Update();
+}
+class ConcreteObserver extends Observer {
+	subject: Subject;
+	Update();
+}
+class ConcreteSubject extends Subject {
+	GetState();
+	SetState();
+}
+
+State: Allow an object to alter its behaviour depending on its state
+class Context {
+	Request() { state.Handle(); }
+}
+abstract class State {
+	abstract Handle();
+}
+class ConcreteStateA extends State {
+	Handle();
+}
+class ConcreteStateB extends State {
+	Handle();
+}
+
+Strategy: Define a family of algorithms, encapsulate each one, and make them interchangeable
+class Context {
+	strategy: Strategy;
+}
+abstract class Strategy {
+	abstract AlgInterface();
+}
+class ConcreteStrategyA extends Strategy {
+	AlgInterface();
+}
+class ConcreteStrategyB extends Strategy {
+	AlgInterface();
+}
+class ConcreteStrategyC extends Strategy {
+	AlgInterface();
+}
+
+Template Method: Define the skeleton of an algorithm in an operation, deferring some steps to subclasses
+abstract class Template {
+	MainMethod() { ... SubMethod1(); ... SubMethod3(); ... }
+	abstract SubMethod1();
+	abstract SubMethod2();
+	abstract SubMethod3();
+}
+class Imp1 extends Template {
+	SubMethod1();
+	SubMethod2();
+	SubMethod3();
+}
+class Imp2 extends Template {
+	SubMethod1();
+	SubMethod2();
+	SubMethod3();
+}
+
+Visitor: Represent an operation to be performed on the elements of an object structure (like a tree)
+abstract class Visitor {
+	abstract VisitNodeA(NodeA);
+	abstract VisitNodeB(NodeB);
+}
+class Visitor1 extends Visitor {
+	VisitNodeA(NodeA);
+	VisitNodeB(NodeB);
+}
+class Visitor2 extends Visitor {
+	VisitNodeA(NodeA);
+	VisitNodeB(NodeB);
+}
+abstract class Node {
+	abstract Accept();
+}
+class NodeA extends Node {
+	others: Element[];
+	Accept(Visitor v) {
+		v.VisitNodeA(this);
+		others.forEach(o -> o.Accept(v));
+	}
+}
+class NodeB extends Node {
+	Accept(Visitor v) {
+		v.VisitNodeB(this);
+	}
+}

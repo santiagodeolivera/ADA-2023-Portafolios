@@ -1,0 +1,23 @@
+Información necesaria para suscribirse:
+	Nombre
+	Apellido
+	
+
+Un usuario quiere suscribirse
+	El usuario entra en el producto
+	El usuario ingresa la información necesaria
+	El usuario se registra
+
+Faltan tres? días para que a un usuario le llegue la fecha agendada del próximo service
+
+El usuario quiere recibir servicios de un taller
+	El usuario busca el taller adecuado
+		Se determina mediante ubicación y servicios
+	El usuario llega al taller
+	El taller le hace preguntas
+		Cantidad de kms del auto
+		Tipo de reparación necesaria
+		Otras observaciones
+	El mecánico realiza las reparaciones
+	El taller le cobra al usuario
+	

@@ -1,0 +1,59 @@
+Casos de uso presentes:
+	Atleta:
+		Registro
+		Inicio de sesión
+		Ver competencia
+			-> Inscripción a competencia
+				Método de pago
+			-> Ver posiciones
+			-> Ver premios
+			-> Ver fotos
+		Ver menú
+			-> Ver historial
+			-> Ver premios
+			-> Editar perfil
+				-> Editar datos personales
+				-> Adjuntar archivo (*1)
+			-> Ajustes
+				-> Notificaciones
+				-> Modo oscuro
+	
+	Gimnasio:
+		Registro
+		Inicio de sesión
+		Home
+			-> Ver competencias
+				-> Registrar competencia
+				-> Ver competencia
+					-> Detalles
+						-> Cambiar de etapa
+					-> WODs
+						-> Agregar WOD
+						-> WOD
+							-> Heats
+								-> Agregar Heat
+			-> Ver jueces
+			-> Ver fotógrafos
+
+	Juez:
+		Inicio de sesión
+		Home
+			-> Competencia
+				-> Descripción
+				-> WODs (*2)
+					-> WOD actual
+					-> Atletas
+						-> Evaluación
+							-> Ver video
+
+	Fotógrafo:
+		Inicio de sesión
+		Home
+			-> Ver competencia (*3)
+				-> Crear álbum (?)
+		...
+
+
+*1: Certificado de salud o consentimiento de deslinde
+*2: Mejorar la forma en la que se presenta la información acerca de la competencia seleccionada o el WOD seleccionado (con un Material Angular Stepper, por ejemplo)
+*3: Organizar mejor el flujo de inserción de fotos gratuitas y de pago

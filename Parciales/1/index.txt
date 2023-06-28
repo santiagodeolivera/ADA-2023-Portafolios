@@ -1,0 +1,45 @@
+Requerimientos - *1
+	SMART
+Goals -> Scope -> Stakeholders
+BE - BUC - PUC
+Escenarios
+Design thinking - EDIPT
+El proceso - *2
+
+
+*1: Requerimientos
+	Documentación
+		Muy larga -> Nadie lo lee
+	Métodos de obtención
+		Apprenticing
+		Dirty Process Modeling
+		Document Archaeology
+		Family Therapy
+		Forums
+		Interviews
+		Mind map
+		Persona Analysis
+		Prototypes
+		Reuse
+
+*2: El proceso
+	Blastoff - *3
+		Obtener
+		Modelado rápido y escenarios
+		Escribiendo
+		Probar
+		Reutilizar
+		Retrospectiva
+		Evolucionando
+		Templates
+
+*3: Blastoff
+	Cost & Risks
+	Glosary
+	Goals -> Scope -> Stakeholders
+	Purpose
+	Requirements - *4
+	Relevant facts and assumptions
+	Final decision
+
+*4: Quality gateway

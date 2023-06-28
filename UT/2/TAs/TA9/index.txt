@@ -1,0 +1,49 @@
+*1 Ubicación: ubicación del taller
+*2 Servicios: servicios del taller
+    Ej: Chapa y pintura, mecánica general, service general, alineación y balanceo
+*3 Modelo: modelo del auto
+*4 Reparaciones: reparaciones necesarias
+    Deben coincidir con los servicios ofrecidos por el taller
+*5 Preguntas: del taller al usuario
+    Ej: cantidad de kms, tipo de reparación necesaria, otras observaciones del usuario
+*6 Información esencial del vehículo
+    Ej: marca, modelo, año, número de identificación (VIN)
+*7 Detalles de las reparaciones solicitadas
+    Ej: Tipo de reparación, descripción del problema, otras observaciones del usuario
+*8 Tareas
+	Cambio de aceite: Indicar el tipo de aceite utilizado, marca, cantidad, fecha del cambio
+	Reemplazo de filtros: Indicar filtros cambiados (aceite, aire, combustible, etc), marca y modelo de nuevos filtros, fecha del cambio
+	Otros…
+
+
+Los usuarios deben poder seleccionar el taller más adecuado según su ubicación y servicios. *1 *2
+
+Los usuarios deben poder especificar el modelo de su auto, y las reparaciones que necesitan realizar. *3 *4
+    Para que los talleres puedan asignar el personal adecuado y los recursos necesarios para la reparación.
+
+Una vez registrado el usuario en el sistema de agendamiento:
+    El usuario debe poder recibir notificaciones cuando se acerque la fecha del próximo servicio de su vehículo.
+   	 Para que los usuarios puedan mantener sus vehículos en óptimas condiciones y reducir los costos de mantenimiento a largo plazo.
+
+Al momento de postularse para una reparación en un taller
+    El taller debe hacer algunas preguntas al usuario
+   	 Para poder obtener información relevante
+
+Mientras el mecánico realiza las tareas
+    El mecánico debe tener acceso a información esencial del vehículo *6
+    El mecánico debe poder consultar los detalles de las reparaciones solicitadas *7
+    El mecánico debe poder consultar el historial de mantenimiento
+    El mecánico debe poder consultar reparaciones previas del vehículo
+    El mecánico debe poder consultar:
+	Cantidad de kms del vehículo
+	Información de contacto del usuario
+	Datos de la cita
+	Fecha
+	Hora
+	Ubicación del taller
+
+Durante el proceso de reparación
+	El mecánico de completar y documentar una serie de tareas *8
+	La documentación acerca de las tareas del mecánico debe ser registrada en el sistema
+		Para mantener un historial completo y detallado de las reparaciones y mantenimiento del vehículo
+			Lo que facilitará un mejor seguimiento y servicio al cliente en futuras visitas al taller.

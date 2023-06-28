@@ -1,0 +1,59 @@
+TIPO_HABILITACION(nombre)
+PK(nombre)
+
+ATLETA(ci, nombre, apellido, email, hashpwd, fecha_nac, hab_tipo, hab_doc_tipo, hab_doc_nombre, hab_doc_url)
+PK(ci)
+FK(hab_tipo) --> TIPO_HABILITACION(nombre)
+
+ETAPA_COMPETENCIA(nombre)
+PK(nombre)
+
+GIMNASIO(id, nombre, apellido, email, hashpwd, RUT, direccion)
+PK(id)
+
+COMPETENCIA(id, nombre, fecha_inicio, direccion, imagen_url, etapa, gimnasio_id)
+PK(id)
+FK(etapa) --> ETAPA_COMPETENCIA(nombre)
+FK(gimnasio_id) --> GIMNASIO(id)
+
+INSCRIPCION(atleta_id, comp_id)
+PK(atleta_id, comp_id)
+FK(atleta_id) --> ATLETA(id)
+FK(comp_id) --> COMPETENCIA(id)
+
+JUEZ(ci, nombre, apellido, email, hashpwd)
+PK(ci)
+
+FOTOGRAFO(ci, nombre, apellido, email, hashpwd)
+PK(ci)
+
+JUEZ_GIMNASIO(gimnasio_id, juez_id)
+PK(gimnasio_id, juez_id)
+FK(gimnasio_id) --> GIMNASIO(id)
+FK(juez_id) --> JUEZ(id)
+
+FOTOGRAFO_GIMNASIO(gimnasio_id, fotografo_id)
+PK(gimnasio_id, fotografo_id)
+FK(gimnasio_id) --> GIMNASIO(id)
+FK(fotografo_id) --> FOTOGRAFO(id)
+
+SERVICIO_EMERGENCIA(id, nombre, telefono)
+PK(id)
+
+SERVICIO_GIMNASIO(gimnasio_id, servicio_id)
+PK(gimnasio_id, servicio_id)
+FK(gimnasio_id) --> GIMNASIO(id)
+FK(servicio_id) --> SERVICIO_EMERGENCIA(id)
+
+WOD(id, comp_id, nombre, descripcion, puntuacion)
+PK(id, comp_id)
+FK(comp_id) --> COMPETENCIA(id)
+
+WOD_HEAT(id, wod_id, comp_id, contenido)
+PK(id, wod_id, comp_id)
+FK(wod_id, comp_id) --> WOD(id, comp_id)
+
+WOD_REALIZADO(wod_id, insc_id, puntuacion, url)
+PK(wod_id, atleta_id, comp_id)
+FK(wod_id, comp_id) --> WOD(id, comp_id)
+FK(atleta_id, comp_id) --> INSCRIPCION(atleta_id, comp_id)

@@ -1,0 +1,228 @@
+:0
+0#ROOT
+Interfaz de usuario
+Usabilidad
+Mobile first
+
+:1
+0#Interfaz de usuario
+Programas
+Interacción entre usuarios y tecnología
+Características
+Tipos de interfaces
+Optimización
+
+:2
+1#Características
+Atractivo visual
+Claridad
+Coherencia
+Flexibilidad
+
+:3
+1#Tipos de interfaces
+Lenguaje natural
+Preguntas y respuestas
+GUI
+VR
+AR
+Usuario tangible
+Usuario por voz
+
+:4
+3#Lenguaje natural
+Lenguaje de presentación
+Lenguaje de acción
+Características
+
+:5
+4#Lenguaje de presentación
+De la computadora al usuario
+
+:6
+4#Lenguaje de acción
+Del usuario a la computadora
+
+:7
+4#Características
+Procesan lenguaje humano
+Comprenden intenciones de usuarios
+Simplifican actividad comercial
+
+:8
+3#Preguntas y respuestas
+Simplifica procesos
+Responde a expectativas
+
+:9
+3#GUI
+Controles de entrada
+Componentes de navegación
+Componentes de información
+Contenedores
+
+:10
+3#VR
+Libertad de movimiento
+Utilizan hardware de VR
+
+:11
+3#AR
+Complementa GUI con hardware de AR
+Favorece actualización en distintas industrias
+
+:12
+3#Usuario tangible
+Se encuentra en paneles de equipo
+Interacción con el usuario
+
+:13
+12#Interacción con el usuario
+Sensores
+Marcadores
+Palancas
+Manivelas
+Reguladores
+Actuadores físicos
+
+:14
+1#Optimización
+Fundamental
+Menos costo
+Optimización de la atención al cliente
+Mejor fidelidad y compromiso de los clientes
+Mayor cantidad de clientes
+Mayor lealtad a la marca
+Publicidad de boca en boca
+Recomendaciones
+
+:15
+14#Recomendaciones
+Diseño web adecuado
+Llamados a la acción
+Comprender al cliente
+Estrategias omnicanal
+Formularios
+Apoyo al usuario
+
+:16
+15#Estrategias omnicanal
+Asegurar una experiencia fluida para PCs y dispositivos móviles
+
+:17
+0#Usabilidad
+Facilidad de interacción usuario-software
+Diseño DX o DCU
+Principios
+Problemas de usabilidad
+
+:18
+17#Principios
+Principios de Jakob Nielsen
+Principios de Bruce Tognazzini
+
+:19
+18#Principios de Jakob Nielsen
+Visibilidad del estado del sistema
+Relación entre el sistema y el mundo real
+Control y libertad de usuario
+Consistencia y estándares
+Prevención de errores
+Reconocer antes que recordar
+Flexibilidad y eficiencia de uso
+Diseño estético y minimalista
+Ayudar a reconocer, diagnosticar y recuperarse de errores
+Ayuda y documentación
+
+:20
+19#Reconocer antes que recordar
+Presentar toda la información necesaria al usuario, para que no tenga que recordarla en alguna parte de la interfaz
+
+:21
+18#Principios de Bruce Tognazzini
+Anticipación
+Autonomía
+Daltonismo
+Consistencia
+Valores por defecto
+Eficiencia del usuario
+Interfaces explorables
+Ley de Fitts
+Objetos de interfaz humana
+Reducción de demoras
+Aprendizaje
+Uso de metáforas
+Protección del trabajo de usuario
+Legibilidad
+Registro del estado
+Navegación visible
+
+:22
+21#Ley de Fitts
+El acto de apuntar con el dedo o el ratón
+T
+
+:23
+22#T
+T: Tiempo medio para completar movimiento
+T = a + b * ID
+a y b son constantes empíricas
+ID
+
+:24
+23#ID
+ID: Índice de dificultad
+ID = log(D/W + 1) / log(2)
+D: distancia entre punto inicial y el centro del objetivo
+W: anchura del objetivo, respecto al eje de movimiento
+
+:25
+17#Problemas de usabilidad
+Evaluación
+Descubrimiento de problemas
+
+:26
+25#Evaluación
+Acceso al sistema
+Restricciones
+Medidas
+Escala
+
+:27
+26#Acceso al sistema
+Los evaluadores no suelen tener acceso al sistema
+Los evaluadores tardarán más si tienen más acceso al sistema
+
+:28
+26#Restricciones
+Cada evaluador debe evaluar los problemas encontrados por los demás evaluadores
+Los evaluadores pueden revisar partes de la interfaz guardadas
+Utilizar promedio de índices entre tres evaluadores suele ser suficiente
+
+:29
+26#Medidas
+Frecuencia del problema
+Impacto del problema
+Persistencia del problema
+(Combinables en uno solo)
+
+:30
+26#Escala
+Del 0 al 4
+
+:31
+25#Descubrimiento de problemas
+Los evaluadores buscan problemas
+Cada uno encuentra solo una pequeña porción
+
+:32
+0#Mobile first
+Paradigma moderno de desarrollo de UI
+Principios
+
+:33
+32#Principios
+Priorizar el contenido
+Navegación intuitiva
+Prueba en dispositivos reales
+

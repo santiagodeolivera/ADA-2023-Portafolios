@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" modified="2023-05-20T19:08:58.653Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="7HPFuetuAf01V8GANsnl" version="21.3.2" type="device">
+  <diagram name="Page-1" id="1qSqsejEG8EOFl0kIM6M">
+    <mxGraphModel dx="1623" dy="455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xErs_it35snihBUeyX5m-1" value="&lt;div&gt;App&lt;/div&gt;&lt;div&gt;{OS = Android}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="160" y="380" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-3" value="&lt;div&gt;App&lt;/div&gt;&lt;div&gt;{OS = iOS}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="160" y="460" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-4" value="&lt;div&gt;App&lt;/div&gt;&lt;div&gt;{OS = Windows}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="160" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-5" value="&lt;div&gt;App&lt;/div&gt;&lt;div&gt;{OS = MacOS}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="160" y="620" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-6" value="&lt;div&gt;App&lt;/div&gt;&lt;div&gt;{OS = Linux}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="160" y="700" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-7" value="&lt;div&gt;Backend&lt;/div&gt;&lt;div&gt;{Java Spring}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="480" y="470" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-8" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-1" target="xErs_it35snihBUeyX5m-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="600" as="sourcePoint" />
+            <mxPoint x="340" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-9" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-3" target="xErs_it35snihBUeyX5m-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="415" as="sourcePoint" />
+            <mxPoint x="420" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-10" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-4" target="xErs_it35snihBUeyX5m-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="495" as="sourcePoint" />
+            <mxPoint x="430" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-11" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-5" target="xErs_it35snihBUeyX5m-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="650" as="sourcePoint" />
+            <mxPoint x="440" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-12" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-6" target="xErs_it35snihBUeyX5m-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="660" as="sourcePoint" />
+            <mxPoint x="450" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-13" value="API REST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="391" y="540" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-14" value="&lt;div&gt;Pentaho (ETL)&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="540" y="525" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-15" value="&lt;div&gt;Play Store (Google)&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="380" width="119" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-16" value="App Store (Apple)" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="460" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-17" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-1" target="xErs_it35snihBUeyX5m-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="415" as="sourcePoint" />
+            <mxPoint x="490" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-18" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-3" target="xErs_it35snihBUeyX5m-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="415" as="sourcePoint" />
+            <mxPoint x="436" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-19" value="Sitio web de la empresa" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="620" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-20" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-4" target="xErs_it35snihBUeyX5m-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="495" as="sourcePoint" />
+            <mxPoint x="60" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-21" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-5" target="xErs_it35snihBUeyX5m-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="575" as="sourcePoint" />
+            <mxPoint x="60" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-22" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-6" target="xErs_it35snihBUeyX5m-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="655" as="sourcePoint" />
+            <mxPoint x="60" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-24" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=elbowEdgeStyle;" edge="1" parent="1" source="xErs_it35snihBUeyX5m-26" target="xErs_it35snihBUeyX5m-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="600.0000000000001" as="sourcePoint" />
+            <mxPoint x="490" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-26" value="&lt;div&gt;Sistema de bases de datos&lt;br&gt;&lt;/div&gt;&lt;div&gt;{PostgreSQL}&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="830" y="530" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xErs_it35snihBUeyX5m-30" value="&lt;div&gt;Tableau&lt;/div&gt;&lt;div&gt;(Generación de informes)&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="520" y="590" width="170" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

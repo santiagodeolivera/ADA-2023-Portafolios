@@ -1,0 +1,29 @@
+getCompetencias()
+getCompetencia(id)
+verPremiosDeCompetencia(compId)
+verPosicionesDeCompetencia(compId)
+verAlbumesDeCompetencia(compId, gratuitoOPago /*boolean*/)
+verFotosDeAlbum(compId, albumId)
+
+Atleta:
+inscripcionACompetencia(atletaCI, compId, division, metodoPago)
+editarDatosPersonales(atletaCI, email, contraseña, nombre, apellidos, fechaNacimiento)
+cargarHabilitacion(atletaId, imagen, tipo)
+cambiarAjustes(notificaciones, temaOscuro)
+verHistorialDeAtleta(atletaCI)
+
+Gimnasio:
+getCompetenciasDeGimnasio(gymId)
+registrarCompetencia(gymId, nombre, fechaInicio, direccion)
+añadirWod(gymId, compId, descripcion, heats, puntuacionDesc, ...)
+editarWod(gymId, compId, wodId, descripcion, heats, puntuacionDesc, ...)
+
+Juez:
+verCompetenciasDeJuez(juezId)
+getPuntuaciones(compId, atletaCI, wodId)
+mostrarVideo(compId, atletaCI, wodId, heatIndex)
+editarPuntuacion(compId, atletaCI, wodId, puntuaciones)
+
+Fotógrafo:
+crearAlbum(compId, costo /*number | undefined*/)
+añadirFoto(compId, albumId, foto)
